@@ -5,6 +5,8 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.shivam.validation.Profession;
+
 public class Customer {
 	
 	
@@ -18,6 +20,18 @@ public class Customer {
 	@Min(value=21, message="Age should be greater than 20")
 	@Max(value=50, message="Age should be less than 50")
 	private Integer age;
+	
+	@Profession
+	@NotNull(message="Must have a profession")
+	String profession;
+
+	public String getProfession() {
+		return profession;
+	}
+
+	public void setProfession(String profession) {
+		this.profession = profession;
+	}
 
 	public Integer getAge() {
 		return age;

@@ -10,7 +10,7 @@
 <h3>
 	Kudos for successful Registration - <br>
 	<h2 style="color:green">
-		${customerData.firstName} ${customerData.lastName} aged ${customerData.age}
+		${customerData.firstName} ${customerData.lastName} aged ${customerData.age} is a ${customerData.profession}
 	</h2>
 </h3>
 

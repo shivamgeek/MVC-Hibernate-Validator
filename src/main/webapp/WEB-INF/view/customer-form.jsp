@@ -24,6 +24,8 @@
 		<br>
 		Enter Age : <form:input  path="age" />
 		<form:errors path="age" cssClass="myError" /><br>
+		Enter Profession : <form:input  path="profession" />
+		<form:errors path="profession" cssClass="myError" /><br>
 		<input type="submit" value="Register">
 	</form:form>
 
