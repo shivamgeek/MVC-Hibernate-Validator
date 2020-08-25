@@ -8,21 +8,22 @@ import javax.validation.constraints.Size;
 public class Customer {
 	
 	
-	
-	@NotNull(message="This is a required field")
-	@Size(min=1, message="Enter atleast 1 character")
 	String firstName;
+	
+	@NotNull(message="Last name is a field")
+	@Size(min=1, message="Enter atleast 1 character")
 	String lastName;
 	
+	@NotNull(message="Age is a mandatory field")
 	@Min(value=21, message="Age should be greater than 20")
 	@Max(value=50, message="Age should be less than 50")
-	private int age;
+	private Integer age;
 
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 
