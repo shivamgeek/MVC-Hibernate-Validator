@@ -21,6 +21,7 @@ public class CustomerController {
 	
 	@RequestMapping("processForm")
 	public String validateCustomerForm(@Valid @ModelAttribute("customerData") Customer c, BindingResult result) {
+		System.out.println("Customer last name entered is |"+c.getLastName()+"|");
 		if(result.hasErrors() == true) {
 			return "customer-form";
 		}else {

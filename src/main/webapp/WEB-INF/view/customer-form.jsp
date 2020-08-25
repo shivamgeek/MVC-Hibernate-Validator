@@ -17,9 +17,13 @@
 
 	<form:form action="processForm" modelAttribute="customerData">
 		Enter First Name : <form:input path="firstName" />
+		<form:errors path="firstName" cssClass="myError" />
 		<br>
 		Enter Last Name : <form:input  path="lastName" />
 		<form:errors path="lastName" cssClass="myError" /><br>
+		<br>
+		Enter Age : <form:input  path="age" />
+		<form:errors path="age" cssClass="myError" /><br>
 		<input type="submit" value="Register">
 	</form:form>
 
